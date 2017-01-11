@@ -1103,6 +1103,7 @@ containing a value of this type.
         public static final int icon=0x7f09002a;
         public static final int ifRoom=0x7f090011;
         public static final int image=0x7f090027;
+        public static final int list=0x7f09003f;
         public static final int listMode=0x7f090006;
         public static final int list_item=0x7f090029;
         public static final int middle=0x7f090018;
@@ -1185,8 +1186,12 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
-        public static final int activity_main=0x7f030018;
-        public static final int support_simple_spinner_dropdown_item=0x7f030019;
+        public static final int activity_bad=0x7f030018;
+        public static final int activity_main=0x7f030019;
+        public static final int activity_wc=0x7f03001a;
+        public static final int menu_home=0x7f03001b;
+        public static final int menudata=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1230,10 +1235,14 @@ containing a value of this type.
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int app_name=0x7f0a000d;
-        public static final int email_eingeben=0x7f0a0010;
-        public static final int hello_world=0x7f0a000e;
-        public static final int login=0x7f0a0011;
-        public static final int passwort_eingeben=0x7f0a000f;
+        public static final int email_eingeben=0x7f0a000f;
+        public static final int hello_world=0x7f0a0012;
+        public static final int login=0x7f0a0010;
+        public static final int passwort_eingeben=0x7f0a000e;
+        public static final int title_activity_bad=0x7f0a0014;
+        public static final int title_activity_menu_home=0x7f0a0011;
+        public static final int title_activity_wc=0x7f0a0015;
+        public static final int todo=0x7f0a0013;
     }
     public static final class style {
         /** 
@@ -2612,7 +2621,7 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x01160058
+            0x0101012f, 0x01010130, 0x01010131, 0x0101052f
         };
         /**
           <p>

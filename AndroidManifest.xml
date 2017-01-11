@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="21" />
+        android:minSdkVersion="19"
+        android:targetSdkVersion="25" />
 
     <application
         android:allowBackup="true"
@@ -20,6 +20,34 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuHomeActivity"
+            android:label="@string/title_activity_menu_home" >
+            <intent-filter>
+                <action android:name="com.example.homemmanagement.MenuHomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bad.Bad"
+            android:label="@string/title_activity_bad" >
+            <intent-filter>
+                <action android:name="com.example.homemmanagement.bad.Bad" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.homemmanagement.wc.Wc"
+            android:label="@string/title_activity_wc" >
+            
+            <intent-filter>
+                <action android:name="com.example.homemmanagement.wc.Wc" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">HomeManagement</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Home Management</string>
     <string name="passwort_eingeben">Passwort eingeben</string>
     <string name="email_eingeben">Email eingeben</string>
     <string name="login">Login</string>
+    <string name="title_activity_menu_home">Menu Home Management</string>
+    <string name="hello_world">Hello world_WC!</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_bad">Bad</string>
+    <string name="title_activity_wc">Wc</string>
 
 </resources>
