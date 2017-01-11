@@ -17,11 +17,11 @@ import com.example.homemmanagement.MyAdapter;
 public class MenuHomeActivity extends Activity implements
         OnItemClickListener {
  
-    public static final String[] titles = new String[] { "Wohnzimmer","Schlafzimmer", "Küche", "Bad","WC"
+    public static final String[] titles = new String[] { "Wohnzimmer","Schlafzimmer", "Kinderzimmer", "Flur", "Küche", "Bad","WC"
              };
  
      public static final Integer[] images = { R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher,  R.drawable.ic_launcher, 
-    	 R.drawable.ic_launcher
+    	 R.drawable.ic_launcher , R.drawable.ic_launcher, R.drawable.ic_launcher
             };
  
     ListView listView;
@@ -66,6 +66,9 @@ public class MenuHomeActivity extends Activity implements
            case 4:  Intent newActivity4 = new Intent("com.example.homemmanagement.wc.Wc");     
                    startActivity(newActivity4);
                     break;
+           case 5:  Intent newActivity5 = new Intent("com.example.homemmanagement.bad.Bad");     
+           startActivity(newActivity5);
+           break;
         }
     }
 }
