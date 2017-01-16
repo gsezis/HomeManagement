@@ -1,19 +1,19 @@
 package com.example.homemmanagement;
 
 import android.app.Activity;
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class MainActivity extends Activity {
+
+
+public class MainActivity extends Activity  {
 	
 	private static EditText mEditText;
 	private static EditText pEditText;
@@ -48,9 +48,10 @@ public class MainActivity extends Activity {
 				startActivity(intent_home);
 				}
 				
-				if(! mEditText.getText().toString().equals("abc")){
+				if(! mEditText.getText().toString().equals("abc") | (!pEditText.getText().toString().equals("pass"))) {
 					Toast.makeText(MainActivity.this, "Email or Password wasn't correct",Toast.LENGTH_SHORT).show();
 					counter --;
+					
 					if(counter==0)
 					{
 						lbutton.setEnabled(false);

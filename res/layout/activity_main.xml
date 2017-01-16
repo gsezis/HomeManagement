@@ -20,10 +20,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="50dp"
         android:ems="10"
-        android:hint="@string/email_eingeben" android:inputType="textEmailAddress">
-
-        <requestFocus />
-    </EditText>
+        android:hint="@string/email_eingeben" android:inputType="textEmailAddress"/>
 
     <Button
         android:id="@+id/button1"
