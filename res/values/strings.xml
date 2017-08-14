@@ -5,10 +5,12 @@
     <string name="passwort_eingeben">Passwort eingeben</string>
     <string name="email_eingeben">Email eingeben</string>
     <string name="login">Login</string>
-    <string name="title_activity_menu_home">Menu Home Management</string>
-    <string name="hello_world">Hello world_WC!</string>
+    <string name="title_activity_menu_home">Home Management</string>
+    <string name="hello_world">BAD</string>
     <string name="todo">TODO</string>
     <string name="title_activity_bad">Bad</string>
     <string name="title_activity_wc">Wc</string>
+    <string name="registration">Registration</string>
+    <string name="homemanagementicon">HomeManagementIcon</string>
 
 </resources>

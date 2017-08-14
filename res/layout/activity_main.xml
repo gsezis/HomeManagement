@@ -4,23 +4,13 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <EditText
-        android:id="@+id/editText2"
+    <Toolbar
+        android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:hint="@string/passwort_eingeben"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/Login_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="50dp"
-        android:ems="10"
-        android:hint="@string/email_eingeben" android:inputType="textEmailAddress"/>
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ff0066"
+        android:elevation="5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
     <Button
         android:id="@+id/button1"
@@ -28,7 +18,33 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/editText2"
-        android:layout_marginTop="26dp"
+        android:onClick="doRegistration"
+        android:layout_marginTop="27dp"
         android:text="@string/login" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Login_email"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/passwort_eingeben"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/email_eingeben"
+        android:inputType="textEmailAddress" />
 
 </RelativeLayout>

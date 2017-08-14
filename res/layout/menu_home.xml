@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
- 
-    <ListView
-        android:id="@+id/list"
+ <Toolbar
+        android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-     />
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ff0066"
+        android:elevation="5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+ <ListView
+     android:id="@+id/list"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" >
+ </ListView>
+
 </LinearLayout>
 

@@ -19,14 +19,15 @@ public class MyAdapter extends ArrayAdapter<beanItem> {
  
     public MyAdapter(Context context, int resourceId,
             List<beanItem> items) {
-        super(context, resourceId, items);
+        	super(context, resourceId, items);
         this.context = context;
     }
-     
-    /*private view holder class*/
+
     private class ViewHolder {
-        ImageView imageView;
+        ImageView imageView; 
+        ImageView imageView2;
         TextView txtTitle;
+       
  
     }
      
@@ -39,8 +40,10 @@ public class MyAdapter extends ArrayAdapter<beanItem> {
         if (convertView == null) {
             convertView = mInflater.inflate(R.layout.menudata, null);
             holder = new ViewHolder();
-            holder.txtTitle = (TextView) convertView.findViewById(R.id.title);
+            
             holder.imageView = (ImageView) convertView.findViewById(R.id.icon);
+            holder.txtTitle = (TextView) convertView.findViewById(R.id.title);
+            holder.imageView2 = (ImageView) convertView.findViewById(R.id.icon2);
             convertView.setTag(holder);
         } else
             holder = (ViewHolder) convertView.getTag();
@@ -48,6 +51,7 @@ public class MyAdapter extends ArrayAdapter<beanItem> {
        
         holder.txtTitle.setText(rowItem.getTitle());
         holder.imageView.setImageResource(rowItem.getImageId());
+        holder.imageView2.setImageResource(rowItem.getImageforward());
          
         return convertView;
     }
