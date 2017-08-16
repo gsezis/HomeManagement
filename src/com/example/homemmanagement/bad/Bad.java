@@ -1,6 +1,7 @@
 package com.example.homemmanagement.bad;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,6 +18,7 @@ public class Bad extends Activity  {
 		
 	Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setActionBar(myToolbar);
+        myToolbar.setTitleTextColor(Color.WHITE);
 	}
 	
 

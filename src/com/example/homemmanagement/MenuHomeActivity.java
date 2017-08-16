@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 
@@ -53,45 +54,42 @@ public class MenuHomeActivity extends Activity implements
         listView.setOnItemClickListener(this);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setActionBar(myToolbar);
+        myToolbar.setTitleTextColor(Color.WHITE);
      
     }
-    
-    
+        
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_bad_menu, menu);
         return true;
     }
-    
-    
-
- 
+     
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position,
             long id) {
     	switch( position )
         {
-//          case 0:  Intent newActivity = new Intent("com.example.homemmanagement.bad.Bad");     
-//                    startActivity(newActivity);
-//                    break;
-//          case 1:  Intent newActivity1 = new Intent("com.example.homemmanagement.wc.Wc");     
-//                    startActivity(newActivity1);
-//                    break;
-////        case 2:  Intent newActivity2 = new Intent(this, olympiakos.class);     
-//                    startActivity(newActivity2);
-//                    break;
-//          case 3:  Intent newActivity3 = new Intent("com.example.homemmanagement.bad.Bad");     
-//                    startActivity(newActivity3);
-//                    break;
-//          case 4:  Intent newActivity4 = new Intent("com.example.homemmanagement.wc.Wc");     
-//                   startActivity(newActivity4);
-//                    break;
+        	case 0:  Intent newActivity = new Intent("com.example.homemmanagement.bad.Bad");     
+          				startActivity(newActivity);
+                    	break;
+          	case 1:  Intent newActivity1 = new Intent("com.example.homemmanagement.wc.Wc");     
+                   		startActivity(newActivity1);
+                   		break;
+        	case 2:  Intent newActivity2 = new Intent("com.example.homemmanagement.bad.Bad");     
+                   		startActivity(newActivity2);
+                   		break;
+         	case 3:  Intent newActivity3 = new Intent("com.example.homemmanagement.bad.Bad");     
+         				startActivity(newActivity3);
+                    	break;
+            case 4:  Intent newActivity4 = new Intent("com.example.homemmanagement.wc.Wc");     
+                   		startActivity(newActivity4);
+                   		break;
         	case 5:  Intent newActivity5 = new Intent("com.example.homemmanagement.bad.Bad");     
-        			startActivity(newActivity5);
-           			break;
+        				startActivity(newActivity5);
+        				break;
         	case 6: Intent newActivity6 = new Intent("com.example.homemmanagement.bad.Bad");     
-           			startActivity(newActivity6);
-           			break;
+           				startActivity(newActivity6);
+           				break;
         }
     }
 }

@@ -2206,13 +2206,15 @@ containing a value of this type.
         public static final int notification_template_part_chronometer=0x7f030024;
         public static final int notification_template_part_time=0x7f030025;
         public static final int records_bad=0x7f030026;
-        public static final int select_dialog_item_material=0x7f030027;
-        public static final int select_dialog_multichoice_material=0x7f030028;
-        public static final int select_dialog_singlechoice_material=0x7f030029;
-        public static final int support_simple_spinner_dropdown_item=0x7f03002a;
+        public static final int records_wohnzimmer=0x7f030027;
+        public static final int select_dialog_item_material=0x7f030028;
+        public static final int select_dialog_multichoice_material=0x7f030029;
+        public static final int select_dialog_singlechoice_material=0x7f03002a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03002b;
     }
     public static final class menu {
-        public static final int main_bad_menu=0x7f0c0000;
+        public static final int login_menu=0x7f0c0000;
+        public static final int main_bad_menu=0x7f0c0001;
     }
     public static final class string {
         public static final int Home=0x7f0a0017;
