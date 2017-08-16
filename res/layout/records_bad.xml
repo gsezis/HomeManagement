@@ -4,5 +4,140 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
+    <Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ff0066"
+        android:elevation="5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" >
+    </Toolbar>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+       
+        android:layout_below="@+id/my_toolbar"
+        android:columnCount="4"
+        android:rowCount="3" >
+
+        <ImageButton
+            android:id="@+id/icon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_column="1"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="2"
+            android:contentDescription="@string/homemanagementicon"
+            android:icon="@drawable/ic_launcher"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/ImageButton01"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="left"
+            android:contentDescription="@string/homemanagementicon"
+            android:icon="@drawable/ic_launcher"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/ImageButton02"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="2"
+            android:contentDescription="@string/homemanagementicon"
+            android:icon="@drawable/ic_launcher"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/ImageButton06"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:contentDescription="@string/homemanagementicon"
+            android:icon="@drawable/ic_launcher"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/ImageButton07"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="0"
+            android:contentDescription="@string/homemanagementicon"
+            android:icon="@drawable/ic_launcher"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/ImageButton05"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="1"
+            android:contentDescription="@string/homemanagementicon"
+            android:icon="@drawable/ic_launcher"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/ImageButton04"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_column="1"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="1"
+            android:contentDescription="@string/homemanagementicon"
+            android:icon="@drawable/ic_launcher"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/ImageButton03"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_column="2"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="1"
+            android:contentDescription="@string/homemanagementicon"
+            android:icon="@drawable/ic_launcher"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/ImageButton08"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_column="2"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:contentDescription="@string/homemanagementicon"
+            android:icon="@drawable/ic_launcher"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_launcher" />
+
+    </GridLayout>
 
 </RelativeLayout>

@@ -15,7 +15,7 @@ public class Bad extends Activity  {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.records_bad);
 		
-		Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+	Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setActionBar(myToolbar);
 	}
 	
@@ -27,7 +27,7 @@ public class Bad extends Activity  {
 	    	return super.onCreateOptionsMenu(menu);
 	    }
 	    @Override
-	    public boolean onOptionsItemSelected(MenuItem item) {
+	 public boolean onOptionsItemSelected(MenuItem item) {
 	    	// TODO Auto-generated method stub
 	    	return super.onOptionsItemSelected(item);
 	    }

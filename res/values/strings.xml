@@ -2,6 +2,9 @@
 <resources>
 
     <string name="app_name">Home Management</string>
+    <string name="Sign_Out">Sign Out</string>
+    <string name="Settings">Settings</string>
+    <string name="Home">Home</string>
     <string name="passwort_eingeben">Passwort eingeben</string>
     <string name="email_eingeben">Email eingeben</string>
     <string name="login">Login</string>
