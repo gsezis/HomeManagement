@@ -5,9 +5,12 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.example.homemmanagement.R;
+
 
 public class Bad extends Activity  {
 
@@ -19,6 +22,15 @@ public class Bad extends Activity  {
 	Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setActionBar(myToolbar);
         myToolbar.setTitleTextColor(Color.WHITE);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayShowHomeEnabled(true);
+        myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+               Toast.makeText(Bad.this, "No function at the moment", Toast.LENGTH_LONG).show();
+            }
+        });
 	}
 	
 

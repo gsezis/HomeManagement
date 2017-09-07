@@ -13,11 +13,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.example.homemmanagement.R;
 import com.example.homemmanagement.beanItem;
 import com.example.homemmanagement.MyAdapter;
+import com.example.homemmanagement.wohn.Wohnzimmer;
 
 public class MenuHomeActivity extends Activity implements
         OnItemClickListener {
@@ -55,6 +57,15 @@ public class MenuHomeActivity extends Activity implements
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setActionBar(myToolbar);
         myToolbar.setTitleTextColor(Color.WHITE);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayShowHomeEnabled(true);
+        myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+               Toast.makeText(MenuHomeActivity.this, "No function at the moment", Toast.LENGTH_LONG).show();
+            }
+        });
      
     }
         
@@ -63,13 +74,37 @@ public class MenuHomeActivity extends Activity implements
         getMenuInflater().inflate(R.menu.main_bad_menu, menu);
         return true;
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+    
+	   switch(item.getItemId()) {
+	    case R.id.action_AboutUs:
+	    	Toast.makeText(MenuHomeActivity.this, "About Us",Toast.LENGTH_LONG).show();	
+//	        Intent intent = new Intent(this, ActivityForItemOne.class);
+//	        this.startActivity(intent);
+	        break;
+	    case R.id.action_Settings:
+	    	Toast.makeText(MenuHomeActivity.this, "Settings",Toast.LENGTH_LONG).show();	
+	        break;
+	    case R.id.action_Logout:
+	    	Toast.makeText(MenuHomeActivity.this, "Logout",Toast.LENGTH_LONG).show();
+      Intent intent = new Intent(this, MainActivity.class);
+	        this.startActivity(intent);
+	        break;
+	        
+	    default:
+	        return super.onOptionsItemSelected(item);
+	    }
+
+	    return true;
+	}
      
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position,
             long id) {
     	switch( position )
         {
-        	case 0:  Intent newActivity = new Intent("com.example.homemmanagement.bad.Bad");     
+        	case 0:  Intent newActivity = new Intent("com.example.homemmanagement.wohn.Wohnzimmer");     
           				startActivity(newActivity);
                     	break;
           	case 1:  Intent newActivity1 = new Intent("com.example.homemmanagement.wc.Wc");     

@@ -13,6 +13,7 @@
     <string name="todo">TODO</string>
     <string name="title_activity_bad">Bad</string>
     <string name="title_activity_wc">Wc</string>
+     <string name="title_activity_wohn">Wohnzimmer</string>
     <string name="registration">Registration</string>
     <string name="homemanagementicon">HomeManagementIcon</string>
 

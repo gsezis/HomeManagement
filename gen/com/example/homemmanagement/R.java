@@ -2018,16 +2018,20 @@ containing a value of this type.
         public static final int notification_template_icon_bg=0x7f02004d;
     }
     public static final class id {
-        public static final int ImageButton01=0x7f090064;
-        public static final int ImageButton02=0x7f090065;
-        public static final int ImageButton03=0x7f09006a;
-        public static final int ImageButton04=0x7f090069;
-        public static final int ImageButton05=0x7f090068;
-        public static final int ImageButton06=0x7f090066;
-        public static final int ImageButton07=0x7f090067;
+        public static final int ImageButton01=0x7f09006a;
+        public static final int ImageButton02=0x7f090068;
+        public static final int ImageButton03=0x7f090069;
+        public static final int ImageButton04=0x7f090066;
+        public static final int ImageButton05=0x7f090067;
+        public static final int ImageButton06=0x7f090065;
+        public static final int ImageButton07=0x7f090064;
         public static final int ImageButton08=0x7f09006b;
         public static final int Login_email=0x7f090054;
         public static final int action0=0x7f090057;
+        public static final int action_AboutUs=0x7f09006c;
+        public static final int action_LogIn=0x7f09006e;
+        public static final int action_Logout=0x7f090071;
+        public static final int action_Settings=0x7f09006d;
         public static final int action_bar=0x7f090041;
         public static final int action_bar_activity_content=0x7f090003;
         public static final int action_bar_container=0x7f090040;
@@ -2042,9 +2046,8 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09003e;
         public static final int action_mode_bar_stub=0x7f09003d;
         public static final int action_mode_close_button=0x7f090023;
-        public static final int action_search=0x7f09006d;
-        public static final int action_settings=0x7f09006c;
-        public static final int action_user=0x7f09006e;
+        public static final int action_search=0x7f090070;
+        public static final int action_settings=0x7f09006f;
         public static final int activity_chooser_view_content=0x7f090024;
         public static final int alertTitle=0x7f090030;
         public static final int always=0x7f090019;
@@ -2288,10 +2291,10 @@ containing a value of this type.
         public static final int app_name=0x7f0a0014;
         public static final int email_eingeben=0x7f0a0019;
         public static final int hello_world=0x7f0a001c;
-        public static final int homemanagementicon=0x7f0a0021;
+        public static final int homemanagementicon=0x7f0a0022;
         public static final int login=0x7f0a001a;
         public static final int passwort_eingeben=0x7f0a0018;
-        public static final int registration=0x7f0a0020;
+        public static final int registration=0x7f0a0021;
         /**  Text to use when the number in a notification info is too large
          (greater than status_bar_notification_info_maxnum, defined in
          values/config.xml) and must be truncated. May need to be localized
@@ -2302,6 +2305,7 @@ containing a value of this type.
         public static final int title_activity_bad=0x7f0a001e;
         public static final int title_activity_menu_home=0x7f0a001b;
         public static final int title_activity_wc=0x7f0a001f;
+        public static final int title_activity_wohn=0x7f0a0020;
         public static final int todo=0x7f0a001d;
     }
     public static final class style {

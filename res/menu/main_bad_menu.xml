@@ -14,7 +14,7 @@
         app:showAsAction="ifRoom"
         ></item>
     <item
-        android:id="@+id/action_user"
+        android:id="@+id/action_Logout"
         android:orderInCategory="300"
         android:title="@string/Sign_Out"
         app:showAsAction="ifRoom"></item>

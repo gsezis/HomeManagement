@@ -56,6 +56,17 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="com.example.homemmanagement.wohn.Wohnzimmer"
+            android:label="@string/title_activity_wohn" >
+            
+            <intent-filter>
+                <action android:name="com.example.homemmanagement.wohn.Wohnzimmer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

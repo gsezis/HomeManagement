@@ -16,7 +16,6 @@ import android.widget.Toolbar;
 
 
 public class MainActivity extends Activity  {
-	
 	private static EditText mEditText;
 	private static EditText pEditText;
 	private static Button lbutton;
@@ -31,6 +30,7 @@ public class MainActivity extends Activity  {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setActionBar(myToolbar);
         myToolbar.setTitleTextColor(Color.WHITE);
+        
     }
     
     public void registrationUser()
@@ -54,17 +54,16 @@ public class MainActivity extends Activity  {
 				
 				if(! mEditText.getText().toString().equals("abc") | (!pEditText.getText().toString().equals("pass"))) {
 					counter --;
+					Toast.makeText(MainActivity.this, "Email or password wasn´t correct",Toast.LENGTH_LONG).show();
 					
 					if(counter==0)
 					{
 						lbutton.setEnabled(false);
 					Toast.makeText(MainActivity.this, "You entered the entries incorrectly three times",Toast.LENGTH_LONG).show();	
-											
 					}
 								
 				}
-					
-				
+						
 				}
 									
 			
@@ -79,7 +78,24 @@ public class MainActivity extends Activity  {
     }
    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-    	// TODO Auto-generated method stub
-    	return super.onOptionsItemSelected(item);
-   }
+    
+	   switch(item.getItemId()) {
+	    case R.id.action_AboutUs:
+	    	Toast.makeText(MainActivity.this, "About Us",Toast.LENGTH_LONG).show();	
+//	        Intent intent = new Intent(this, ActivityForItemOne.class);
+//	        this.startActivity(intent);
+	        break;
+	    case R.id.action_Settings:
+	    	Toast.makeText(MainActivity.this, "Settings",Toast.LENGTH_LONG).show();	
+	        break;
+	    case R.id.action_LogIn:
+	    		
+	        break;
+	        
+	    default:
+	        return super.onOptionsItemSelected(item);
+	    }
+
+	    return true;
+	}
 }
