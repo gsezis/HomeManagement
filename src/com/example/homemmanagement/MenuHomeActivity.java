@@ -57,15 +57,18 @@ public class MenuHomeActivity extends Activity implements
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setActionBar(myToolbar);
         myToolbar.setTitleTextColor(Color.WHITE);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setDisplayShowHomeEnabled(true);
-        myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-               Toast.makeText(MenuHomeActivity.this, "No function at the moment", Toast.LENGTH_LONG).show();
-            }
-        });
+        
+        //back function is not necessary because still in home screen
+        
+      //  getActionBar().setDisplayHomeAsUpEnabled(true);
+       // getActionBar().setDisplayShowHomeEnabled(true);
+//        myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//               Toast.makeText(MenuHomeActivity.this, "No function at the moment", Toast.LENGTH_LONG).show();
+//            }
+//        });
      
     }
         

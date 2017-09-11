@@ -1,7 +1,6 @@
 package com.example.homemmanagement;
 
 import android.app.Activity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -14,13 +13,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
-
 public class MainActivity extends Activity  {
 	private static EditText mEditText;
 	private static EditText pEditText;
 	private static Button lbutton;
 	private static int counter =3;
-	
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +27,6 @@ public class MainActivity extends Activity  {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setActionBar(myToolbar);
         myToolbar.setTitleTextColor(Color.WHITE);
-        
     }
     
     public void registrationUser()
@@ -64,9 +60,7 @@ public class MainActivity extends Activity  {
 								
 				}
 						
-				}
-									
-			
+				}						
 		});
     	 	
         }
